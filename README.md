@@ -1,5 +1,5 @@
 <p align="center">
-  Portfolio of <a href="https://atharva-kinikar-portfolio.netlify.app" target="_blank">Atharva Kinikar's</a>built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  Portfolio of <a href="https://atharva-kinikar-portfolio.netlify.app" target="_blank">Atharva Kinikar </a>built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
 <p align="center">
