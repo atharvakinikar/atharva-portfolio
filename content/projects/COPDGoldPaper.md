@@ -2,7 +2,7 @@
 date: '2023-09-15'
 title: 'Predicting COPD Severity Using Machine Learning and GOLD Criteria'
 github: ''
-external: 'https://drive.google.com/file/d/1gSWbas9F5K81iGMSvUeBhcG1c00tGeIS/view?usp=sharing'
+external: 'https://drive.google.com/file/d/1ALEFw19oCL5Rkj-iVLRbPCunoCKmuPPO/view?usp=sharing'
 tech:
   - ML
   - Data Science
