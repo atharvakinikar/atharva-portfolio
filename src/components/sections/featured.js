@@ -248,13 +248,13 @@ const StyledProject = styled.li`
     grid-row: 1 / -1;
     position: relative;
     z-index: 1;
-  
+
     @media (max-width: 768px) {
       grid-column: 1 / -1;
       height: 100%;
       opacity: 0.25;
     }
-  
+
     a {
       width: 100%;
       height: 100%;
@@ -263,7 +263,7 @@ const StyledProject = styled.li`
       vertical-align: middle;
       outline: 0; /* Added to mimic the hover effect */
     }
-  
+
     a:before {
       content: '';
       position: absolute;
@@ -278,13 +278,12 @@ const StyledProject = styled.li`
       background-color: transparent; /* Changed from var(--navy) to transparent to mimic the hover effect */
       mix-blend-mode: screen;
     }
-  
+
     .img {
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: none; /* Changed to 'none' to mimic the hover effect */
-      brightness(90%); /* Adjust brightness if needed, considering the hover effect is now default */
-  
+      filter: brightness(90%);
+
       @media (max-width: 768px) {
         object-fit: cover;
         width: auto;
@@ -293,7 +292,6 @@ const StyledProject = styled.li`
       }
     }
   }
-  
 `;
 
 const Featured = () => {
@@ -309,7 +307,12 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                  gatsbyImageData(
+                    width: 700
+                    height: 394
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
                 }
               }
               tech
@@ -376,8 +379,8 @@ const Featured = () => {
 
                     <div className="project-links">
                       {cta && (
-                        <a href={cta} aria-label="Course Link" className="cta">
-                          Learn More
+                        <a href={cta} aria-label="View Demo" className="cta">
+                          View Demo
                         </a>
                       )}
                       {github && (

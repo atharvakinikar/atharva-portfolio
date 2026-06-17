@@ -4,10 +4,10 @@ module.exports = {
   siteMetadata: {
     title: 'Atharva Kinikar',
     description:
-      'Atharva Kinikar is a software engineer who specializes in building exceptional digital experiences.',
+      'Atharva Kinikar is a backend-focused Software Engineer specializing in architecting distributed systems, event-driven architectures, high-performance APIs, and machine learning models.',
     siteUrl: 'https://atharva-kinikar-portfolio.netlify.app', // No trailing slash allowed!
     image: '/demo_1.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@AtharvaKinikar',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Atharva Kinikar',
+        short_name: 'Atharva Kinikar',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

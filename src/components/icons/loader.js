@@ -10,8 +10,8 @@ const IconLoader = () => (
           fill="currentColor"
         /> */}
         <text x="22" y="59" fill="currentColor" fontSize="50px" fontFamily="Consolas, serif">
-      A
-    </text>
+          A
+        </text>
       </g>
       <path
         stroke="currentColor"

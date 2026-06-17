@@ -17,11 +17,11 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: rgba(5, 8, 17, 0.75);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   transition: var(--transition);
 
   @media (max-width: 1080px) {
@@ -38,7 +38,8 @@ const StyledHeader = styled.header`
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
-        background-color: rgba(10, 25, 47, 0.85);
+        background-color: rgba(5, 8, 17, 0.75);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
 
@@ -206,7 +207,11 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/Atharva_Kinikar_Resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a
+      className="resume-button"
+      href="/Atharva_Kinikar_Resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer">
       Resume
     </a>
   );

@@ -61,13 +61,14 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Atharva Kinikar.</h2>;
-  const three = <h3 className="big-heading">I love to build stuff!</h3>;
+  const three = <h3 className="big-heading">I build high-scale, resilient backend systems.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer and my journey has equipped me
-        with strong foundation in developing robust backend systems, crafting intricate ML models
-        and reveling in the resolution of intricate real-world challenges.
+        I'm a backend-focused Software Engineer specializing in architecting distributed systems,
+        event-driven architectures, and high-performance APIs. Currently, I build secure,
+        high-revenue transaction and payment infrastructures at FamPay as a part of the Core
+        Payments team.
       </p>
     </>
   );
