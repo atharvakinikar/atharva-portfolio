@@ -1,17 +1,16 @@
 ---
 date: '2024-02-28'
-title: 'Smartharvest'
+title: 'Sugarcane crop monitoring using satellite imagery'
 github: ''
 external: ''
 tech:
   - FastAPI
-  - Node.js
+  - Go
   - PostgreSQL
-  - QGIS
   - Redis
-  - Metabase
+  - Machine Learning
 company: 'Carnot Technologies'
 showInProjects: true
 ---
 
-Worked on Smarharvest - Sugarcane farm health monitoring using Satellite Imagery and Earth Observational Data
+Optimized data management for 1.2M+ rows, automated shape-cleanup with FastAPI, and designed a sugarcane yield prediction model (95% accuracy) using earth observational data and SVM/Gradient Boosting.

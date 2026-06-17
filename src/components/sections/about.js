@@ -64,7 +64,7 @@ const StyledPic = styled.div`
     background-color: var(--green);
     outline: 0;
     transform: translate(-4px, -4px);
-  
+
     .img {
       position: relative;
       border-radius: var(--border-radius);
@@ -74,7 +74,7 @@ const StyledPic = styled.div`
       filter: none; /* Remove grayscale and contrast filters */
       mix-blend-mode: normal; /* Reset mix-blend-mode to normal */
     }
-  
+
     &:before,
     &:after {
       content: '';
@@ -85,14 +85,14 @@ const StyledPic = styled.div`
       border-radius: var(--border-radius);
       transition: var(--transition);
     }
-  
+
     &:before {
       top: 0;
       left: 0;
       background-color: var(--navy);
       mix-blend-mode: screen;
     }
-  
+
     &:after {
       border: 2px solid var(--green);
       top: 14px;
@@ -100,7 +100,7 @@ const StyledPic = styled.div`
       z-index: -1;
       transform: translate(8px, 8px); /* Apply the transform that was originally on hover */
     }
-  }  
+  }
 `;
 
 const About = () => {
@@ -115,7 +115,22 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Python', 'Flask', 'FastAPI', 'JavaScript', 'Node.js', 'Express.js', 'React', 'Java', 'Spring Boot', 'JUnit', 'Mockito', 'PostgreSQL', 'MYSQL', 'MongoDB', , 'Redis', 'Docker', 'AWS', 'GCP', 'Machine Learning', 'Computer Vision'];
+  const skills = [
+    'Go',
+    'Python',
+    'FastAPI',
+    'Flask',
+    'Node.js',
+    'React',
+    'Spring Boot',
+    'PostgreSQL',
+    'MongoDB',
+    'Redis',
+    'Docker',
+    'Kafka',
+    'Temporal',
+    'AWS',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -125,17 +140,21 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Atharva and I enjoy creating things that solve real-life problems.
-              I always love to take on challenging projects and explore new stuff!
-              I am humbled to share that my endeavors have been recognized by esteemed personalities, 
-              including the Hon'ble Vice President of India Shri Jagdeep Dhankhar, and the Hon'ble Minister of Education, Shri Dharmendra Pradhan.
-              I am the winner of UNESCO India - Africa International Hackathon 2022 as well as the Smart India Hackathon 2022.
+              Hello! My name is Atharva and I enjoy creating things that solve real-life problems. I
+              always love to take on challenging projects and explore new stuff! I am humbled to
+              share that my endeavors have been recognized by esteemed personalities, including the
+              Hon'ble Vice President of India Shri Jagdeep Dhankhar, and the Hon'ble Minister of
+              Education, Shri Dharmendra Pradhan. I am the winner of UNESCO India - Africa
+              International Hackathon 2022 as well as the Smart India Hackathon 2022.
             </p>
 
             <p>
-            I am driven by the conviction that technology can be a powerful tool for problem-solving, enhancing lives, and simplifying complexities. 
-            With an unwavering commitment to this vision, I strive to make a meaningful impact through my work. Previously I have worked at{' '}
-              <a href="https://home.barclays/">Barclays</a>,{' '}
+              I am driven by the conviction that technology can be a powerful tool for
+              problem-solving, enhancing lives, and simplifying complexities. With an unwavering
+              commitment to this vision, I strive to make a meaningful impact through my work.
+              Currently, I am working as a Software Development Engineer (SDE) at{' '}
+              <a href="https://fampay.in/">FamPay</a> as a part of the Core Payments team.
+              Previously, I have worked at <a href="https://home.barclays/">Barclays</a>,{' '}
               <a href="https://decentro.tech/">Decentro</a>,{' '}
               <a href="https://www.carnot.co.in/">Carnot Technologies</a>, and{' '}
               <a href="https://www.linkedin.com/company/seekmy">Seekmy Technology</a>.
@@ -158,6 +177,8 @@ const About = () => {
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Headshot"
+              aspectRatio={1}
+              objectPosition="center 30%"
             />
           </div>
         </StyledPic>
